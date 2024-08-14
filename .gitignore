@@ -1,0 +1,19 @@
+# Ignore virtual environment
+cms/
+
+# Ignore Python bytecode
+*.pyc
+__pycache__/
+
+# Ignore database file
+db.sqlite3
+
+# Ignore static files
+staticfiles/
+
+# Ignore IDE/editor config files
+.vscode/
+.idea/
+
+# Ignore Django secret key file (if any)
+secret_key.txt

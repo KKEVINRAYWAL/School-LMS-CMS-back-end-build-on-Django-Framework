@@ -1,0 +1,61 @@
+# Core Django and Related Packages
+Django
+djangorestframework
+djangorestframework-simplejwt
+
+# CORS handling
+django-cors-headers
+
+# Filtering support for DRF
+django-filter
+
+# Swagger and Redoc for API documentation
+drf-yasg
+
+# Easy authentication for REST APIs
+djoser
+
+# Better form handling with Bootstrap 5
+django-crispy-forms
+crispy-bootstrap5
+
+# Useful Django extensions
+django-extensions
+
+# File storage handling (e.g., S3)
+django-storages
+
+# Rich text editor
+django-ckeditor
+
+# Celery for asynchronous and periodic tasks
+celery
+django-celery-beat
+django-celery-results
+redis  # Required for Celery backend
+
+# Django AllAuth for authentication
+django-allauth
+
+# Debugging toolbar for Django
+django-debug-toolbar
+
+# WebSockets and async features
+channels
+
+# Admin Interface Enhancements
+django-grappelli
+
+# Additional Dependencies
+Pillow  # For image processing
+mysqlclient  # MySQL adapter for Django
+
+# Optional but Useful Packages
+django-environ  # Environment variable management
+django-health-check  # Health check endpoints for monitoring
+django-axes  # Brute-force attack protection
+django-compressor  # Compress CSS and JS files
+gunicorn  # WSGI HTTP Server for Unix
+
+# Security Enhancements
+django-secure  # Security enhancements for Django

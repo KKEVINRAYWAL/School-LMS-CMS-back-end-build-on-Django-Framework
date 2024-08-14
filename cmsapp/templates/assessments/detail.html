@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment Detail</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+<body>
+    <header>
+        <h1>Assessment Detail</h1>
+        <nav>
+            <a href="{% url 'home' %}">Home</a>
+            <a href="{% url 'assessments:index' %}">Assessments</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>{{ assessment.title }}</h2>
+        <p><strong>Description:</strong> {{ assessment.description }}</p>
+        <p><strong>Due Date:</strong> {{ assessment.due_date }}</p>
+        <p><strong>Course:</strong> {{ assessment.course.name }}</p>
+        <p><strong>Instructor:</strong> {{ assessment.course.instructor.get_full_name }}</p>
+
+        <a href="{% url 'assessments:index' %}">Back to Assessments</a>
+    </main>
+
+    <footer>
+        <p>&copy; {{ current_year }} Your School</p>
+    </footer>
+</body>
+</html>
