@@ -17,6 +17,7 @@ GRAPPELLI_ADMIN_TITLE = "EMININ STUDENT CMS"
 GRAPPELLI_AUTOCOMPLETE_LIMIT = 10
 GRAPPELLI_SWITCH_USER = True
 
+GRAPPELLI_INDEX_DASHBOARD = 'cmsapp.dashboard.CustomIndexDashboard'
 # Application definition
 INSTALLED_APPS = [
     "django.contrib.admin",
@@ -35,8 +36,8 @@ INSTALLED_APPS = [
     "crispy_bootstrap5",
     "django_extensions",
     "storages",
-    "ckeditor",
-    "ckeditor_uploader",
+    # "ckeditor",
+    # "ckeditor_uploader",
     "debug_toolbar",
     "django_celery_beat",
     "django_celery_results",
