@@ -182,14 +182,14 @@ LOGGING = {
     'disable_existing_loggers': False,
     'handlers': {
         'console': {
-            'level': 'DEBUG',
+            'level': 'WARNING',  # Change this to 'ERROR' if you want to log only errors
             'class': 'logging.StreamHandler',
         },
     },
     'loggers': {
         'django': {
             'handlers': ['console'],
-            'level': 'DEBUG',
+            'level': 'WARNING',  # Change this to 'ERROR' if you want to log only errors
             'propagate': True,
         },
     },
